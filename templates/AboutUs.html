@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "poppins", sans-serif;
+        color: white;
+    }
+
+    body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 25px 13%;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .navbar a {
+        position: relative;
+        font-size: 16px;
+        color: #fff;
+        margin-right: 30px;
+        text-decoration: none;
+    }
+
+
+    .background {
+        position: relative;
+        background: url('https://raw.githubusercontent.com/darrenkoo1/aws-live1/main/templates/background3.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        filter: blur(10px);
+        z-index: 1;
+    }
+
+    .form-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 600px;
+        background: url('https://raw.githubusercontent.com/darrenkoo1/aws-live1/main/templates/background3.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        overflow: hidden;
+        z-index: 2;
+    }
+
+
+    .form-bubble {
+
+        border-radius: 1rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-bubble-container {
+        margin-bottom: 2rem;
+    }
+
+    .form-bubble-container label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-bubble-container input {
+        padding: 0.5rem;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .custom-file-input {
+        cursor: pointer;
+    }
+
+    .form-button1 {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 1rem 2rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
+        margin: 1rem 2px;
+        cursor: pointer;
+        border-radius: 1rem;
+    }
+
+    h2{
+        text-align: center;
+        color: white;
+        font-size: 16px;
+    }
+
+    td img {
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin: auto;
+    }
+
+    .td3 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
+</style>
+<head>
+    <title>Employee About Us</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/addemp">Add</a>
+            <a href="/deleteemp">Delete</a>
+            <a href="/getemp">Retrieve</a>
+            <a href="/about">About Us</a>
+        </nav>
+    </header>
+
+    <div class="background"></div>
+
+    <div class="form-container">
+        <div class="form-bubble">
+            <h2>About Us</h2>
+
+            <div class="form-bubble-container">
+                <h3>Company Leaders</h3>
+
+                <table>
+                    <tr>
+                        <td class="td3">
+                            CHAIRMAN
+                            <img src="1.jpg" alt="CM" >
+                            Mickey 
+                        </td>
+                        <td class="td3">
+                            Chief Executive Officer
+                            <img src="2.jpg" alt="CM">
+                            Chuan
+                        </td>
+                        <td class="td3">
+                            Chief Operating Officer
+                            <img src="3.jpg" alt="CM">
+                            Darren
+                        </td>
+                        <td class="td3">
+                            Chief Technology Officer
+                            <img src="4.jpg" alt="CM">
+                            Marcus
+                        </td>
+                    </tr>
+                </table>
+
+                <h3>Company Story</h3>
+
+                <table>
+                    <tr>
+                        <td class="td1" style="text-align: justify;">
+                            <div style="padding-left: 15px;">
+                                <p>In the year 2007, in the heart of Silicon Valley, MKW was born. Our founders, Mickey and Chuan, two engineers from prestigious tech universities, shared a vision of creating technology solutions that could change the world by assists companies of all sizes and across all sectors in modernising their HR functions to increase efficiency. </p>
+                                <p>Initially, the firm relied on a Windows-based HR System. As time passed, the company's reputation blossomed, and its client base expanded. Recognizing a shifting economic landscape and evolving industry trends, we seized the opportunity to transition from a Windows-based system to a Cloud-based Human Resource Management Software (HRMS).
+
+                                    This revolutionary shift was successfully carried out in 2014, beginning with our operations in India. The introduction of our cloud-based HRMS not only marked a significant milestone in our journey but also catalyzed our expansion into other Asian markets, including China, Thailand, and Korea.
+                                    
+                                    Fast forward to 2023, our company boasts a dedicated workforce of over 300 individuals. We are proud to serve more than 30,000 clients and handle the payroll administration for over half a million employees. Our continued growth is a testament to our commitment to innovation and service excellence in the field of HR technology.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
